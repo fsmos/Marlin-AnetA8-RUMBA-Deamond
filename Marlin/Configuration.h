@@ -340,7 +340,7 @@
 #if ENABLED(MIXING_EXTRUDER)
   #define MIXING_STEPPERS 3       // Number of steppers in your mixing extruder
   #define MIXING_VIRTUAL_TOOLS 16  // Use the Virtual Tool method with M163 and M164
-  //#define DIRECT_MIXING_IN_G1    // Allow ABCDHI mix factors in G1 movement commands
+  #define DIRECT_MIXING_IN_G1    // Allow ABCDHI mix factors in G1 movement commands
   #define GRADIENT_MIX           // Support for gradient mixing with M166 and LCD
   #if ENABLED(GRADIENT_MIX)
     //#define GRADIENT_VTOOL       // Add M166 T to use a V-tool index as a Gradient alias
@@ -460,7 +460,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 6
+#define TEMP_SENSOR_0 1
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
